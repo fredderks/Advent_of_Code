@@ -167,7 +167,6 @@ while True:
             store = 1
         else:
             store = 0
-
         if not param3_mode:
             intcode[intcode[i + 3]] = store
         elif param3_mode:
@@ -183,7 +182,6 @@ while True:
             store = 1
         else:
             store = 0
-
         if not param3_mode:
             intcode[intcode[i + 3]] = store
         elif param3_mode:
