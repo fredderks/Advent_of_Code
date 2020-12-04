@@ -41,12 +41,13 @@ print(plot_toboggan_slope(tree_map, right=3, down=1))
 
 # region --- Assignment 2 ---
 
-slope1 = plot_toboggan_slope(tree_map, right=1, down=1)
-slope2 = plot_toboggan_slope(tree_map, right=3, down=1)
-slope3 = plot_toboggan_slope(tree_map, right=5, down=1)
-slope4 = plot_toboggan_slope(tree_map, right=7, down=1)
-slope5 = plot_toboggan_slope(tree_map, right=1, down=2)
+slopes = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]]
 
-print(slope1*slope2*slope3*slope4*slope5)
+trees_product = 1
+for slope in slopes:
+    trees = plot_toboggan_slope(tree_map, right=slope[0], down=slope[1])
+    trees_product *= trees
+
+print(trees_product)
 
 # endregion
