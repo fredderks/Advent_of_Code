@@ -1,5 +1,6 @@
 import re
 
+
 def create_password_dict(input_lines):
     passports = []
     for passport in input_lines:
