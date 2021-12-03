@@ -1,12 +1,11 @@
 import numpy as np
 
 diagnostic_report = open('input.txt', "r").read().splitlines()
-
-# region --- Assignment 1 ---
-
 transposed_report = []
 for i in range(len(diagnostic_report[0])):
     transposed_report.append([row[i] for row in diagnostic_report])
+
+# region --- Assignment 1 ---
 
 gamma_rate = ""
 epsilon_rate = ""
@@ -26,9 +25,6 @@ print(f"gamma rate: {gamma_rate} ({gamma_rate_dec}), epsilon rate: {epsilon_rate
 
 # region --- Assignment 2 ---
 
-transposed_report = []
-for i in range(len(diagnostic_report[0])):
-    transposed_report.append([int(row[i]) for row in diagnostic_report])
 transposed_report = np.array(transposed_report)
 
 
