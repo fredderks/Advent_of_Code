@@ -63,7 +63,7 @@ print(f"{remaining_sum} * {winning_card[1]} = {remaining_sum * winning_card[1]}"
 
 # endregion
 
-# region --- Assignment 1 ---
+# region --- Assignment 2 ---
 
 bingo_at_round = {}
 solved_bingo_cards = []
